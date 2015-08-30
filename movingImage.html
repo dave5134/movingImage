@@ -1,0 +1,58 @@
+
+       <html>
+   
+   <head>
+      <title> Animating Images </title>
+      
+      <script type="text/javascript">
+         <!--
+            var imgDrp = null;
+            
+            function init(){
+               imgDrp = document.getElementById('myImage');
+               imgDrp.style.position= 'relative'; 
+               imgDrp.style.left = '0px'; 
+               imgDrp.style.top  = '0px';
+               imgDrp.style.top  = '0px';
+            }
+            
+            function moveRight(){
+               imgDrp.style.left = parseInt(imgDrp.style.left) + 10 + 'px';
+            }
+            
+            function moveDown(){
+               imgDrp.style.top = parseInt(imgDrp.style.top) + 10 + 'px';
+            }
+            
+            function moveUp
+            (){
+               imgDrp.style.top = parseInt(imgDrp.style.top) + (-10) + 'px';
+            }
+            
+            function moveLeft
+            (){
+               imgDrp.style.left = parseInt(imgDrp.style.left) + (-10) + 'px';
+            }
+                     
+            window.onload =init;
+         //-->
+      </script>
+      
+   </head>
+   
+   <body>
+   
+      <form>
+         <img id="myImage" src="images/store.jpg" />
+         <p>Click to move right</p>
+         <input type="button" value="Click Me" onclick="moveRight();" />
+         <p>Click to move down</p>
+         <input type="button" value="Click Me" onclick="moveDown();" />
+         <p>Click to move up</p>
+         <input type="button" value="Click Me" onclick="moveUp();" />
+         <p>Click to move left</p>
+         <input type="button" value="Click Me" onclick="moveLeft();" />
+      </form>
+      
+   </body>
+</html>
